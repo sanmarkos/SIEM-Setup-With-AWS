@@ -10,13 +10,18 @@ The objective of this project is to understand cloud networking, secure log forw
 ## 2. Folder Structure
 
 ```
-Cloud-SOC-Lab/
-├── README.md
-├── Project_Flow.md
-├── Concepts_Explanation.md
-├── Architecture/
-├── Queries_and_Alerts/
-└── Screenshots/
+Cloud-SIEM-Lab/
+│
+├── README.md                             # Project overview and summary
+├── Project_Flow.md                       # Complete architecture and workflow explanation
+├── concept_explanation.md                # General concepts (VPC, Subnet, IGW, SG, Event Codes, Logon Types)
+├── RDP Brute-force Detection Rule.md     # SPL query and alert configuration
+│
+├── Screenshots/
+│   ├── Cloud_configuration.md            # AWS infrastructure screenshots and explanation
+│   └── Log_forward.md                    # Splunk ingestion, alert, and dashboard screenshots
+│
+└── LICENSE
 ```
 ## 3. Project Architecture Summary
 
@@ -35,9 +40,9 @@ The lab includes:
 
 Detailed flow explanation is available in:
 
-- Project_Flow.md
-- Concepts_Explanation.md
-- Queries_and_Alerts/rdp_bruteforce_detection.md
+- [Project Flow](Project_Flow.md)
+- [Concepts Explanation](concept_explanation.md)
+- [RDP Brute-Force Detection Rule](RDP%20Brute-force%20Detection%20Rule.md)
 
 ---
 
@@ -60,7 +65,8 @@ RDP Brute-Force Detection using:
 - Threshold-based logic (more than 5 failed attempts within 5 minutes)
 
 Full query explanation available in:
-Queries_and_Alerts/rdp_bruteforce_detection.md
+[RDP Brute-Force Detection Rule](RDP%20Brute-force%20Detection%20Rule.md)
+
 
 ---
 
